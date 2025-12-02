@@ -1,0 +1,23 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme - DARK MODE -->
+    <style name="Base.Theme.SmartTodoApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color - lighter for dark mode -->
+        <item name="colorPrimary">#BB86FC</item>
+        <item name="colorPrimaryVariant">#3700B3</item>
+        <item name="colorOnPrimary">#000000</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">#03DAC6</item>
+        <item name="colorSecondaryVariant">#03DAC6</item>
+        <item name="colorOnSecondary">#000000</item>
+
+        <!-- Background colors - dark theme -->
+        <item name="android:colorBackground">#121212</item>
+        <item name="colorSurface">#1E1E1E</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+
+        <!-- Status bar -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_small"
+    app:cardElevation="@dimen/card_elevation"
+    app:cardCornerRadius="@dimen/card_corner">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_normal">
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/checkboxCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Priority Badge (Top Right) -->
+        <TextView
+            android:id="@+id/tvPriority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/margin_small"
+            android:paddingVertical="@dimen/margin_tiny"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/white"
+            android:maxLines="1"
+            android:ellipsize="end"
+            tools:text="HIGH"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Task Title -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:textSize="@dimen/text_normal"
+            android:textStyle="bold"
+            android:textColor="?colorOnSurface"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="Buy milk from supermarket"
+            app:layout_constraintStart_toEndOf="@id/checkboxCompleted"
+            app:layout_constraintEnd_toStartOf="@id/tvPriority"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHorizontal_bias="0" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:textSize="@dimen/text_small"
+            android:textColor="#757575"
+            android:maxLines="2"
+            android:ellipsize="end"
+            tools:text="3 liters of milk"
+            app:layout_constraintStart_toEndOf="@id/checkboxCompleted"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_small"
+            android:textSize="@dimen/text_tiny"
+            android:textColor="#9E9E9E"
+            android:maxLines="1"
+            tools:text="📁 Personal"
+            app:layout_constraintStart_toEndOf="@id/checkboxCompleted"
+            app:layout_constraintTop_toBottomOf="@id/tvDescription" />
+
+        <!-- Due Date -->
+        <TextView
+            android:id="@+id/tvDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_normal"
+            android:textSize="@dimen/text_tiny"
+            android:textStyle="bold"
+            android:drawablePadding="@dimen/margin_tiny"
+            android:maxLines="1"
+            tools:text="📅 25/11/2025"
+            app:drawableStartCompat="@android:drawable/ic_menu_my_calendar"
+            app:layout_constraintStart_toEndOf="@id/tvCategory"
+            app:layout_constraintTop_toTopOf="@id/tvCategory"
+            app:layout_constraintBottom_toBottomOf="@id/tvCategory" />
+
+        <!-- Overdue Warning (separate line) -->
+        <TextView
+            android:id="@+id/tvOverdue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            tools:text="⚠️ באיחור!"
+            tools:visibility="visible"
+            app:layout_constraintStart_toEndOf="@id/checkboxCompleted"
+            app:layout_constraintTop_toBottomOf="@id/tvCategory" />
+
+        <!-- Delete Button -->
+        <ImageButton
+            android:id="@+id/btnDelete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/margin_tiny"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Delete task"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvPriority" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

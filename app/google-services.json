@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "45984232664",
+    "project_id": "smarttodoapp-3f5d8",
+    "storage_bucket": "smarttodoapp-3f5d8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:45984232664:android:ca84d70181c992e35453ad",
+        "android_client_info": {
+          "package_name": "com.afeka.smarttodoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyoFwPEkF_F43GMd72IlFLOjNIPSCQhlQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

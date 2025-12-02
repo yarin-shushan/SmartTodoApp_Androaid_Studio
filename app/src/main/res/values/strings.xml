@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SmartToDoApp</string>
+
+    <!-- Login & Register -->
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="full_name">Full Name</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="dont_have_account">Don\'t have an account? Register</string>
+    <string name="already_have_account">Already have an account? Login</string>
+    <string name="username_required">Username required</string>
+    <string name="password_required">Password required</string>
+    <string name="invalid_username_or_password">Invalid username or password</string>
+    <string name="username_min_length">Username must be at least 3 characters</string>
+    <string name="password_min_length">Password must be at least 6 characters</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="email_required">Email required</string>
+    <string name="invalid_email">Invalid email format</string>
+    <string name="username_exists">Username already exists</string>
+    <string name="email_exists">Email already exists</string>
+    <string name="registration_successful">Registration successful! Please login</string>
+    <string name="full_name_required">Full name required</string>
+
+    <!-- Main Screen -->
+    <string name="add_task">Add Task</string>
+    <string name="edit_task">Edit Task</string>
+    <string name="delete_task">Delete Task</string>
+    <string name="delete_confirmation">Are you sure you want to delete \'%1$s\'?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="task_deleted">Task deleted</string>
+    <string name="task_added">Task added!</string>
+    <string name="task_updated">Task updated!</string>
+    <string name="error_user_not_logged_in">Error: User not logged in</string>
+
+    <!-- Task Dialog -->
+    <string name="add_new_task">Add New Task</string>
+    <string name="edit_task_title">Edit Task</string>
+    <string name="task_title">Task Title</string>
+    <string name="description_optional">Description (Optional)</string>
+    <string name="category">Category</string>
+    <string name="priority">Priority</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="due_date_optional">Due Date (Optional)</string>
+    <string name="select_date">Select Date</string>
+    <string name="save">Save</string>
+    <string name="title_required">Title is required</string>
+
+    <!-- Categories -->
+    <string name="category_general">General</string>
+    <string name="category_work">Work</string>
+    <string name="category_personal">Personal</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_study">Study</string>
+
+    <!-- Task Status -->
+    <string name="overdue">⚠️ Overdue! %1$s</string>
+    <string name="due_date_format">📅 %1$s</string>
+
+    <!-- Priority in Hebrew (for display) -->
+    <string name="priority_high_display">High</string>
+    <string name="priority_medium_display">Medium</string>
+    <string name="priority_low_display">Low</string>
+
+</resources>
